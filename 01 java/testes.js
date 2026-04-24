@@ -17,11 +17,11 @@
 // alert ("nome digitado" + nome)
 
 
-let nota
- prompt("digite a primeira nota")
- nota1 = Number(1)
+// let nota
+//  prompt("digite a primeira nota")
+//  nota1 = Number(1)
 
- alert(nota1)
+//  alert(nota1)
 
 
 
