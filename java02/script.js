@@ -10,6 +10,7 @@ let resposta = document.getElementById ('resultado')
 //console.log(numero)
 //numero = math.ceil(numero)
 //console.log(numero)
+//console.log(numero)
 
 
 let chut =Number(prompt("chuta ai: "))
