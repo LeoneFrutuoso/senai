@@ -1,4 +1,66 @@
-let resposta = document.getElementById ('resultado')
+let resposta  = document.getElementById ('resultado')
+
+function ex09(){
+    // if(){
+
+    // }else{
+
+    // }
+}
+
+
+function verificarMeta(){
+    // infos
+    let totalBruto,premiacoes,presentes,comicoes
+    let meta
+// entradas
+totalBruto = Number(prompt("totalBruto: "))
+premiacoes = Number(prompt("premiacoes: "))
+presentes = Number(prompt("presentes"))
+comicoes =Number(prompt("comocoes"))
+meta = Number(prompt("Meta de hoje:"))
+//processamento
+lucro = totalBruto - premiacoes - presentes - comicoes
+let mensagem
+
+
+if(lucro >= meta){
+// bateu a meta
+}else{
+    // nao bateu a meta
+}
+if (lucro = 0){
+    // sem meta mais com lucro
+    mensagem = 'Nao batemos a meta mais tivemos lucro de R$'  
+    +lucro.tofixed(2).replace('.',',')
+
+}else{
+    // sem meta e prejuiso
+    let prejuiso =lucro * -1
+}
+
+
+// saidas
+resposta.innerHTML= "lucro de hoje: R$" + lucro.toFixed(2).replace('.'  , ',' ) +'<br>' 
++ mensagem
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function resultadoDaOperacao(){
     // infos
@@ -11,19 +73,19 @@ num2 = Number(prompt("digita o segundo numero: "))
     // processamento
 if  (operacao == "+"){
 resultado = num1 + num2
-}else if{
-operacao = num1 - num2
+}else if (operacao == '-'){
+    resultado = num1 - num2
 
-}else if{
- resultado = num1 * num2
-}else if{
-resultado = num1 / num2
+}else if (operacao == '*'){
+    resultado = num1 * num2
+}else if (operacao == '/'){
+    resultado = num1 / num2
 }
 
     // saidas
      document.getElementById('resultado').innerHTML = resultado
 
-}
+}gi
 
 
 
@@ -115,6 +177,7 @@ function verificarIdade(){
     // entradas
     idade = Number(prompt("digite sua idade"))
     // processamentos
+    
     // saidas
     if (idade >= 18){
         resposta.innerHTML = "voce é maior de idade"
