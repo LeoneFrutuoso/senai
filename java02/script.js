@@ -1,4 +1,52 @@
 let resposta  = document.getElementById ('resultado')
+ function fabricaDeFantasias(){
+// infos
+let salario, valorEmprestimo, numeroPrestacoes,valorPrestacao ,limitePrestacao
+
+//  entradas
+salario= Number(prompt("Qual o valor do salario:"))
+valorEmprestimo=Number(prompt("Qual valor do emprestimo: "))
+ numeroPrestacoes=Number(prompt("Qual numero de prestacoes: "))
+
+// processamentos 
+valorPrestacao = valorEmprestimo/numeroPrestacoes
+limitePrestacao = salario * 0.3
+
+if(valorPrestacao <= limitePrestacao){
+resposta.innerHTML = 'Emprestimo concedido'
+
+}else{
+    resposta.innerHTML = 'Emprestimo nao concedido '
+}
+// saidas
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  function calcularUber(){
 // infos
 let distancia,tempoSegundos, tempoHoras ,tempoMinutos ,tempoDias
