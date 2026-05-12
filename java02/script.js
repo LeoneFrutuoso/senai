@@ -1,4 +1,20 @@
 let resposta  = document.getElementById ('resultado')
+funct
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function ex09(){
     // if(){
