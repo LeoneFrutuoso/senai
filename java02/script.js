@@ -1,22 +1,72 @@
 let resposta  = document.getElementById ('resultado')
- function verificarIdade(){
+ function calcularUber(){
+// infos
+let distancia,tempoSegundos 
+const velocidade = 300000
+
+// entrada
+distancia = Number(prompt("distancia: "))
+
+// processamento
+tempoSegundos = distancia / velocidade
+
+//  saida
+resposta.innerHTML = '<br> Tempo: ' + tempoSegundos + 'segundos '
+
+// segunda etapa
+if (tempoSegundos > 60){
+tempoMinutos = temposegundos / 60 
+resposta.innerHTML += '<br>ou' +tempoMinutos +'minutos (s)'
+tempoHoras = tempoMinutos /60
+resposta.innerHTML =+'<br>ou' + tempoHoras + 'horas'
+
+}
+if(tempoHoras > 24){
+tempoDias = tempoHoras /24
+// ...
+}
+
+
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+function verificarIdade(){
 //   infos
-let idade, resultado
+let idade
 // leitura
 idade = Number(prompt("Digite a sua idade: "))
 // processamento
 if (idade >= 18) {
-        resultado = "Maior de idade"
+        resposta.innerHTML = "Maior de idade"
     } else {
-        resultado = "Menor de idade"
+        resposta.innerHTML = "Menor de idade"
     }
 
 if(idade>=16){
-    resultado = "voto opcional"
+    resposta.innerHTML += "voto opcional"
 }else if(idade>=18){
 
 } else{
-    "voto  obrigatorio"
+    resposta.innerHTML += "voto  obrigatorio"
 }
      
 }
