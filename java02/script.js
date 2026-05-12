@@ -1,5 +1,25 @@
 let resposta  = document.getElementById ('resultado')
-funct
+ function verificarIdade(){
+//   infos
+let idade, resultado
+// leitura
+idade = Number(prompt("Digite a sua idade: "))
+// processamento
+if (idade >= 18) {
+        resultado = "Maior de idade"
+    } else {
+        resultado = "Menor de idade"
+    }
+
+if(idade>=16){
+    resultado = "voto opcional"
+}else if(idade>=18){
+
+} else{
+    "voto  obrigatorio"
+}
+     
+}
 
 
 
@@ -12,9 +32,7 @@ funct
 
 
 
-
-
-
+// let resposta  = document.getElementById ('resultado')
 
 function ex09(){
     // if(){
@@ -101,7 +119,7 @@ resultado = num1 + num2
     // saidas
      document.getElementById('resultado').innerHTML = resultado
 
-}gi
+}
 
 
 
