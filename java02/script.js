@@ -1,7 +1,7 @@
 let resposta  = document.getElementById ('resultado')
  function calcularUber(){
 // infos
-let distancia,tempoSegundos 
+let distancia,tempoSegundos, tempoHoras ,tempoMinutos ,tempoDias
 const velocidade = 300000
 
 // entrada
@@ -15,14 +15,14 @@ resposta.innerHTML = '<br> Tempo: ' + tempoSegundos + 'segundos '
 
 // segunda etapa
 if (tempoSegundos > 60){
-tempoMinutos = temposegundos / 60 
+tempoMinutos = tempoSegundos / 60 
 resposta.innerHTML += '<br>ou' +tempoMinutos +'minutos (s)'
 tempoHoras = tempoMinutos /60
-resposta.innerHTML =+'<br>ou' + tempoHoras + 'horas'
+resposta.innerHTML +='<br>ou' + tempoHoras + 'horas'
 
 }
 if(tempoHoras > 24){
-tempoDias = tempoHoras /24
+tempoDias = tempoHoras / 24
 // ...
 }
 
