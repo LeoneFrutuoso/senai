@@ -1,41 +1,87 @@
-//  total de vendas: r$
-let total= 0
+
+//  total de vendas: r$ = 0
+let total = 0
+let totalPontos = 0;
+
+
+function rolarDado(lados) {
+    // [ENTRADAS]
+    // A entrada aqui vem direto do clique do botão através do parâmetro "lados".
+    // Se clicou no D6, a variável "lados" vale 6. Se clicou no D20, vale 20.
+
+
+    // [PROCESSAMENTO]
+    // Mágica para gerar um número aleatório entre 1 e o número de lados do dado:
+    let resultadoRolagem = Math.floor(Math.random() * lados) + 1;
+
+    // Somando o resultado do dado atual no nosso totalizador Global
+    totalPontos = totalPontos + resultadoRolagem;
+
+
+    // [SAÍDAS]
+    // Mostra o resultado do dado que acabou de ser clicado
+    document.getElementById('p-resultadoDado').innerHTML = "Você rolou um D" + lados + " e tirou: " + resultadoRolagem;
+    
+    // Atualiza o totalizador geral na tela
+    document.getElementById('p-totalPontos').innerHTML = "Total Acumulado: " + totalPontos + " pontos";
+}
+
+
+// Função extra para caso a Dona Bete queira começar o teste do zero
+function zerarJogo() {
+    totalPontos = 0;
+    document.getElementById('p-resultadoDado').innerHTML = "Jogo zerado!";
+    document.getElementById('p-totalPontos').innerHTML = "Total Acumulado: 0 pontos";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function registrarVenda(){
 let valor = Number(document.getElementById('inputVenda').value)
 // registrar venda no total
 total = total + valor 
 // atualizar total na pagina 
-document.getElementById('totalVendido').innerHTML =
-'total de vendas: R$' + total.toFixed(2)
+document.getElementById('totalVendido').innerHTML =  
+'Total de vendas: R$' + total.toFixed(2)
 //  lista de vendas 
 document.getElementById('listaVendas').innerHTML += 'R$' + valor.toFixed(2) +'<br>'
 document.getElementById('inputVenda').value = ''
 document.getElementById('inputVenda').focus()
+
+console.log(valor)
 }
 
+let cont = 0
 
-
-
-
-
-
-
-
-function registrarVenda(){
-let valor = Number(document.getElementById('inputVenda').value)
-    // registrar venda no total
-    // atualizar total na página
-
-    console.log(valor)
-    
-}
-
-
-
-
-
-
-letcon = 0
 function incrementarContagem(){
 cont = cont + 1
     // cont = cont + 1
@@ -56,7 +102,7 @@ function somar10(){
     document.getElementById('p-contagem').innerHTML = cont
 }
 function somar2(){
-    cont += 2
+    // cont += 2
     document.getElementById('p-contagem').innerHTML = cont
 }
 function zerarContagem(){
@@ -65,34 +111,6 @@ function zerarContagem(){
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 let global ='eu sou uma variavel global :/'
 function funcao1(){
