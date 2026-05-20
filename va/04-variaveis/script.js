@@ -5,13 +5,11 @@ let totalPontos = 0;
 
 
 function rolarDado(lados) {
-    // [ENTRADAS]
-    // A entrada aqui vem direto do clique do botão através do parâmetro "lados".
-    // Se clicou no D6, a variável "lados" vale 6. Se clicou no D20, vale 20.
+   
 
 
     // [PROCESSAMENTO]
-    // Mágica para gerar um número aleatório entre 1 e o número de lados do dado:
+   
     let resultadoRolagem = Math.floor(Math.random() * lados) + 1;
 
     // Somando o resultado do dado atual no nosso totalizador Global
@@ -19,10 +17,8 @@ function rolarDado(lados) {
 
 
     // [SAÍDAS]
-    // Mostra o resultado do dado que acabou de ser clicado
+  
     document.getElementById('p-resultadoDado').innerHTML = "Você rolou um D" + lados + " e tirou: " + resultadoRolagem;
-    
-    // Atualiza o totalizador geral na tela
     document.getElementById('p-totalPontos').innerHTML = "Total Acumulado: " + totalPontos + " pontos";
 }
 
