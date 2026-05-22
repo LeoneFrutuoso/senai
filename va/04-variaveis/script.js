@@ -2,12 +2,8 @@
 //  total de vendas: r$ = 0
 let total = 0
 let totalPontos = 0;
-
-
 function rolarDado(lados) {
    
-    
-
     // [PROCESSAMENTO]
     
     let resultadoRolagem = Math.floor(Math.random() * lados) + 1;
