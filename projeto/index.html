@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Amigo</title>
+    <style>
+        /* Estilos para deixar a página bonita (CSS) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f9f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2f9e44;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+
+        /* Estrutura das duas colunas que você desenhou */
+        .conteudo-principal {
+            display: flex;
+            flex: 1;
+            max-width: 1200px;
+            margin: 30px auto;
+            gap: 30px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        /* Barra Lateral (Esquerda) */
+        aside {
+            flex: 1;
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            height: fit-content;
+        }
+
+        aside h2 {
+            color: #2f9e44;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ebf7ed;
+            padding-bottom: 10px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background-color: #f8fbf8;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        aside ul li:hover {
+            background-color: #e2f4e5;
+            color: #2f9e44;
+            transform: translateX(5px);
+        }
+
+        /* Área Principal (Direita) */
+        main {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .caixa-interacao {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 1.8rem;
+            color: #2b3a2e;
+            margin-bottom: 20px;
+        }
+
+        .campo-busca {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #2f9e44;
+        }
+
+        button {
+            background-color: #2f9e44;
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        button:hover {
+            background-color: #237b32;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        /* Caixa de Resposta Interativa */
+        .caixa-resposta {
+            background-color: #ebf7ed;
+            border-left: 5px solid #2f9e44;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: none; /* Começa escondida */
+            text-align: left;
+            animation: surgir 0.5s ease;
+        }
+
+        /* Seção de Histórias */
+        .historias {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .historias h3 {
+            color: #2b3a2e;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .texto-historia {
+            color: #666;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2b3a2e;
+            color: #a3b8a6;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        @keyframes surgir {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Espaço amigo</h1>
+    </header>
+
+    <div class="conteudo-principal">
+
+        <aside>
+            <h2>Guia e recursos</h2>
+            <ul>
+                <li onclick="filtrarTema('Ansiedade')">ansiedade</li>
+                <li onclick="filtrarTema('Depressão')">Depressão</li>
+                <li onclick="filtrarTema('Relacionamento')">relacionamento</li>
+                <li onclick="filtrarTema('Autoestima')">Auto estima</li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="caixa-interacao">
+                <h2>Como posso deixar o seu coração mais leve hoje?</h2>
+                
+                <div class="campo-busca">
+                    <input type="text" id="problemaInput" placeholder="Conte seu problema ou como se sente...">
+                    <button onclick="buscarSolucao()">Encontre uma soluçao</button>
+                </div>
+
+                <div id="resposta" class="caixa-resposta"></div>
+            </div>
+
+            <div class="historias">
+                <h3>Historias que inspiram</h3>
+                <p class="texto-historia" id="textoHistoria">"Depois de passar por momentos muito difíceis de ansiedade, descobri que respirar fundo e dar um passo de cada vez muda tudo. Você não está sozinho nessa jornada."</p>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Espaço Amigo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Lógica de Interatividade do seu programa (JavaScript)
+        function buscarSolucao() {
+            const input = document.getElementById('problemaInput').value;
+            const caixaResposta = document.getElementById('resposta');
+
+            if (input.trim() === "") {
+                caixaResposta.style.display = "block";
+                caixaResposta.style.backgroundColor = "#fff3cd";
+                caixaResposta.style.borderLeftColor = "#ffc107";
+                caixaResposta.innerHTML = "<strong>Espaço Amigo:</strong> Por favor, sinta-se à vontade para escrever algo na caixa acima para que eu possa te acolher.";
+                return;
+            }
+
+            // Resposta acolhedora simulando o site funcionando
+            caixaResposta.style.display = "block";
+            caixaResposta.style.backgroundColor = "#ebf7ed";
+            caixaResposta.style.borderLeftColor = "#2f9e44";
+            caixaResposta.innerHTML = `<strong>Espaço Amigo:</strong> Obrigado por compartilhar isso comigo. Colocar para fora é o primeiro passo para aliviar o coração. Lembre-se de que sentimentos são como nuvens: eles vêm, mas também passam. Respire fundo, estamos juntos nessa.`;
+            
+            // Limpa o campo depois de enviar
+            document.getElementById('problemaInput').value = "";
+        }
+
+        function filtrarTema(tema) {
+            const caixaResposta = document.getElementById('resposta');
+            caixaResposta.style.display = "block";
+            caixaResposta.style.backgroundColor = "#ebf7ed";
+            caixaResposta.style.borderLeftColor = "#2f9e44";
+            caixaResposta.innerHTML = `<strong>Guia de ${tema}:</strong> Você clicou em um recurso. Aqui nós vamos listar artigos, meditações guiadas e conselhos práticos para te ajudar a lidar com a ${tema.toLowerCase()}.`;
+        }
+    </script>
+</body>
+</html>
