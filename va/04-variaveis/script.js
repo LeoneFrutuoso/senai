@@ -4,8 +4,15 @@ let total = 0
 let totalPontos = 0;
 function rolarDado(lados) {
    
+<<<<<<< HEAD
     // [PROCESSAMENTO]
     
+=======
+
+
+    // [PROCESSAMENTO]
+   
+>>>>>>> aa9341bdd5ec820b1ffd4d2760f43e1e3cdaadbd
     let resultadoRolagem = Math.floor(Math.random() * lados) + 1;
 
     // Somando o resultado do dado atual no nosso totalizador Global
@@ -13,7 +20,11 @@ function rolarDado(lados) {
 
 
     // [SAÍDAS]
+<<<<<<< HEAD
    
+=======
+  
+>>>>>>> aa9341bdd5ec820b1ffd4d2760f43e1e3cdaadbd
     document.getElementById('p-resultadoDado').innerHTML = "Você rolou um D" + lados + " e tirou: " + resultadoRolagem;
     document.getElementById('p-totalPontos').innerHTML = "Total Acumulado: " + totalPontos + " pontos";
 }
