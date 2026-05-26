@@ -114,7 +114,7 @@ let valor = Number(document.getElementById('inputVenda').value)
 // registrar venda no total
 total = total + valor 
 // atualizar total na pagina 
-document.getElementById('totalVendido').innerHTML =  
+document.getElementById('p-totalVendido').innerHTML =  
 'Total de vendas: R$' + total.toFixed(2)
 //  lista de vendas 
 document.getElementById('listaVendas').innerHTML += 'R$' + valor.toFixed(2) +'<br>'
