@@ -1,18 +1,91 @@
+let totalRolado = 0
+function resetar(){
+document.getElementById('outputUltima').innerHTML = "nao jogou ainda"
+document.getElementById('outputTotal'). innerHTML = 0
+
+}
+
+
+
+
+function rolarD2(){
+document.getElementById('outputUltima').innerHTML = rolarDado
+totalRolado += dado
+document.getElementById('outputTotal').innerHTML = totalRolado
+
+
+}
+
+function rolarD4(){
+document.getElementById('outputUltima').innerHTML = rolarDado
+totalRolado += dado
+document.getElementById('outputTotal').innerHTML = totalRolado
+}
+function rolarD6(){
+document.getElementById('outputUltima').innerHTML = rolarDado
+totalRolado += dado
+document.getElementById('outputTotal').innerHTML = totalRolado
+}
+function rolarD10(){
+document.getElementById('outputUltima').innerHTML = rolarDado
+totalRolado += dado
+document.getElementById('outputTotal').innerHTML = totalRolado
+
+}
+
+
+function rolarD12(){
+document.getElementById('outputUltima').innerHTML = rolarDado
+totalRolado += dado
+document.getElementById('outputTotal').innerHTML = totalRolado
+
+}
+
+function rolarD20(){
+document.getElementById('outputUltima').innerHTML = rolarDado
+totalRolado += dado
+document.getElementById('outputTotal').innerHTML = totalRolado
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //  total de vendas: r$ = 0
 let total = 0
 let totalPontos = 0;
 function rolarDado(lados) {
    
-<<<<<<< HEAD
-    // [PROCESSAMENTO]
-    
-=======
 
-
-    // [PROCESSAMENTO]
-   
->>>>>>> aa9341bdd5ec820b1ffd4d2760f43e1e3cdaadbd
     let resultadoRolagem = Math.floor(Math.random() * lados) + 1;
 
     // Somando o resultado do dado atual no nosso totalizador Global
@@ -20,11 +93,7 @@ function rolarDado(lados) {
 
 
     // [SAÍDAS]
-<<<<<<< HEAD
-   
-=======
-  
->>>>>>> aa9341bdd5ec820b1ffd4d2760f43e1e3cdaadbd
+
     document.getElementById('p-resultadoDado').innerHTML = "Você rolou um D" + lados + " e tirou: " + resultadoRolagem;
     document.getElementById('p-totalPontos').innerHTML = "Total Acumulado: " + totalPontos + " pontos";
 }
