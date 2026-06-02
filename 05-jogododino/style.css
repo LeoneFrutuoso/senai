@@ -1,0 +1,87 @@
+*{
+margin:  0;
+padding:0 
+box
+
+}
+body {
+            background-color: #32ab83;
+            color: #c9d12f;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+
+h1{
+color: #1f8c9f;
+
+}
+
+
+label{
+    color: #288665;
+
+
+
+}
+
+button{
+background-color: #323833;
+color: #268652;
+padding: 5px;
+width: 25%;
+border-radius:  5px; ;
+
+
+}
+ 
+#btfinanca{
+width: 40px;
+
+}
+
+
+
+
+
+
+h2{
+color: #268665;
+text-align: center;
+
+
+}
+
+
+p{
+height: 32px;
+padding: 10px 30px
+
+}
+
+input{
+height: 32px;
+border-radius: 10px; 
+
+
+
+}
+
+#divbt{
+padding: 20px;
+display: flex;
+justify-content:center ;
+align-items: center;
+flex-wrap: wrap;
+gap: 10px;
+
+
+}
+
+
+
+
+
+
+
