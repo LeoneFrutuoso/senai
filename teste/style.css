@@ -1,0 +1,51 @@
+button{
+
+
+
+
+
+
+}
+
+.btn1{
+    margin: 10px 15px 10px 10px;
+background-color: rgb(203, 24, 24);
+padding: 12px;
+border-radius: 6px;
+border: none;
+color: #fff;
+font-size: 16px;
+
+}
+ .btn1:hover{
+    
+  background-color: blue;  
+  box-shadow:#d22121f4 50px  10px  50px;
+
+
+
+ }
+
+.btn2{
+    margin: 10px 15px 10px 10px;
+background-color: rgb(176, 40, 200);}
+
+
+  
+.btn2:hover{
+transform: scale(3.0) rotate(20deg);
+
+
+
+}
+.btn3{
+    background-color: aqua;
+
+}
+.btn3:hover{
+transform: scale(1.7) rotate(5deg);
+
+}
+
+
+
