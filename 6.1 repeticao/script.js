@@ -77,16 +77,104 @@
 
 // 
 
-let palavra = "javascript";
-let resultado = ""; // Começa vazia para podermos somar as letras nela
-let divResultado = document.getElementById("Resultado"); // O ID do seu HTML
+// let palavra = "javascript";
+// let resultado = ""; // Começa vazia para podermos somar as letras nela
+// let divResultado = document.getElementById("Resultado"); // O ID do seu HTML
 
-// O loop passa de letra em letra
-for (let i = 0; i < palavra.length; i++) {
-    // Pegamos a letra atual e somamos com uma quebra de linha HTML
-    resultado += palavra[i] + "<br>";
-}
+// // O loop passa de letra em letra
+// for (let i = 0; i < palavra.length; i++) {
+//     // Pegamos a letra atual e somamos com uma quebra de linha HTML
+//     resultado += palavra[i] + "<br>";
+// }
 
-// SÓ AGORA, fora do for, colocamos o resultado final na tela
-divResultado.innerHTML = resultado;
+// // SÓ AGORA, fora do for, colocamos o resultado final na tela
+// divResultado.innerHTML = resultado;
 
+
+// Utilize um for para mostrar todos os múltiplos de 3 entre 1 e 30.
+
+//  for(let i = 1; i <=30; i++){
+//     if(i % 3 ===0 ){
+//     console.log(i)
+
+//     }
+// }
+
+
+//  Utilize um for para imprimir 10 asteriscos, um de cada vez, na mesma linha.
+
+
+
+//  let  operador = "*"
+//  for(let i = 0; i<10;i++ ){
+//     operador += "*"
+//  }
+ 
+//  console.log(operador)
+ 
+    
+//Utilize um for para calcular a soma dos números pares entre 1 e 20. 
+
+// let soma = 0
+// for(let i = 1;i <= 20; i++ ){
+
+//     if(i % 2 ==0)
+//         soma += i
+   
+// }
+
+//  console.log("A soma dos numero pares" , soma)
+
+
+//Utilize um for para mostrar os números de 0 até 50, contando de 5 em 5. 
+// for (let i = 0; i <= 50; i += 5) {
+//     console.log(i);
+// }
+
+
+//Utilize um for para imprimir a palavra "Olá!" exatamente 8 vezes.
+
+
+// let  palavra = "ola"
+// for(let i = 0;   i <palavra <8; i++) {
+//   console.log ("ola")  
+// }
+
+
+// let somaImpares = 0; 
+
+// for (let i = 1; i <= 15; i++) {
+//     if (i % 2 !== 0) { 
+//         somaImpares += i; 
+//     }
+
+
+//console.log("A soma dos números ímpares é:", somaImpares);
+
+
+// Utilize um for para exibir a sequência: 1, 12, 123, 1234, 12345 
+
+// let sequencia = ""
+// for (let i = 1; i <= 5; i++) {
+//     sequencia += i; // Cola o número atual no final do texto
+//     console.log(sequencia)
+// }
+
+//Utilize um for para calcular o fatorial de 5. 
+// let fatorial = 1; // O nosso começo agora é 1
+
+// for (let i = 5; i >= 1; i--) {
+//     fatorial *= i}
+// console.log("O fatorial de 5 é:", fatorial);
+
+
+// let palavra = "oroscopo"; 
+// let contador = 0;           
+
+// for (let i = 0; i < palavra.length; i++) {
+//     if (palavra[i] === "o") {
+
+//     }
+// }
+
+// console.log("A quantidade de letras 'o' é:", contador);
