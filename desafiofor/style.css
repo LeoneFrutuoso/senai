@@ -1,0 +1,53 @@
+/* Configura o fundo da página inteira e centraliza a folha */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e2e8f0; /* Cor de fundo cinza-azulada moderna */
+    margin: 0;
+    height: 100vh; /* Ocupa a altura inteira da tela */
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center;     /* Centraliza na vertical */
+}
+
+/* Estilo da "folha" no meio da página */
+.cartao {
+    background-color: #ffffff; /* Cor branca para a folha */
+    padding: 40px;
+    border-radius: 12px; /* Cantos arredondados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra para dar efeito de papel flutuando */
+    width: 100%;
+    max-width: 450px; /* Garante que não fique larga demais */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+ul {
+    padding: 0;
+    list-style: none; /* Remove as bolinhas da lista */
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9; /* Linha divisória fina entre os dias */
+    color: #475569;
+    display: flex;
+    justify-content: space-between; /* Deixa o dia na esquerda e as tarefas na direita */
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px dashed #cbd5e1; /* Linha tracejada antes do total */
+    color: #059669; /* Verde para destacar o sucesso */
+    text-align: center;
+}
+
