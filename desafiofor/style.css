@@ -1,22 +1,22 @@
-/* Configura o fundo da página inteira e centraliza a folha */
+ 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e2e8f0; /* Cor de fundo cinza-azulada moderna */
+    background-color: #e2e8f0; 
     margin: 0;
-    height: 100vh; /* Ocupa a altura inteira da tela */
+    height: 100vh; 
     display: flex;
-    justify-content: center; /* Centraliza na horizontal */
-    align-items: center;     /* Centraliza na vertical */
+    justify-content: center; 
+    align-items: center;     
 }
 
-/* Estilo da "folha" no meio da página */
+
 .cartao {
-    background-color: #ffffff; /* Cor branca para a folha */
+    background-color: #ffffff; 
     padding: 40px;
-    border-radius: 12px; /* Cantos arredondados */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra para dar efeito de papel flutuando */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
     width: 100%;
-    max-width: 450px; /* Garante que não fique larga demais */
+    max-width: 450px; 
     box-sizing: border-box;
 }
 
@@ -30,24 +30,22 @@ h1 {
 
 ul {
     padding: 0;
-    list-style: none; /* Remove as bolinhas da lista */
+    list-style: none; 
 }
 
 li {
     padding: 10px 0;
-    border-bottom: 1px solid #f1f5f9; /* Linha divisória fina entre os dias */
+    border-bottom: 1px solid #f1f5f9;
     color: #475569;
     display: flex;
-    justify-content: space-between; /* Deixa o dia na esquerda e as tarefas na direita */
+    justify-content: space-between; 
 }
-
 .total {
     font-weight: bold;
     font-size: 18px;
     margin-top: 25px;
     padding-top: 15px;
-    border-top: 2px dashed #cbd5e1; /* Linha tracejada antes do total */
-    color: #059669; /* Verde para destacar o sucesso */
+    border-top: 2px dashed #cbd5e1; 
+    color: #059669; 
     text-align: center;
 }
-
