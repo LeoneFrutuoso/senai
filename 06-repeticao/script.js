@@ -25,20 +25,20 @@
 //     i++ // contagem
 // }
 
-let total = 0
+// let total = 0
 
-let i = 0 // inicialização
-while(i < 3){ // cond repet
-    console.log("valor atual de i: " + i)
-    i++ // contagem
-    console.log(" agora o valor atual de i è: " + i)
-    let preco = Number(prompt("Digite o preço do " + i + "° produto:" ))
-    total = total + preco
-    // total += preco
+// let i = 0 // inicialização
+// while(i < 3){ // cond repet
+//     console.log("valor atual de i: " + i)
+//     i++ // contagem
+//     console.log(" agora o valor atual de i è: " + i)
+//     let preco = Number(prompt("Digite o preço do " + i + "° produto:" ))
+//     total = total + preco
+//     // total += preco
 
-    document.getElementById('total').innerHTML += i + "° produto: R$" + preco.toFixed(2) + "<br>"
-}
+//     document.getElementById('total').innerHTML += i + "° produto: R$" + preco.toFixed(2) + "<br>"
+// }
 
-alert(total)
+// alert(total)
 
 
