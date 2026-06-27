@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço Amigo</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="topo-site">
-        <div class="header-conteudo">
-            <h1>Espaço amigo</h1>
-            <p class="subtitulo">Seu lugar seguro para desabafar e encontrar paz</p>
-        </div>
+    <header>
+        <h1>Espaço Amigo</h1>
     </header>
 
     <div id="telaCadastro" class="secao-cadastro">
         <div class="card-cadastro">
             <h2>Seja bem-vindo(a)</h2>
-            <p>Escolha como deseja entrar no seu espaço seguro hoje.</p>
+            <p>Crie uma conta rápida para entrar no seu espaço seguro.</p>
             
             <div class="grupo-input">
                 <label for="nomeUsuario">Seu Nome ou Apelido</label>
@@ -26,66 +23,47 @@
             </div>
 
             <div class="grupo-input">
-                <label for="emailUsuario">Seu E-mail (Opcional)</label>
+                <label for="emailUsuario">Seu E-mail</label>
                 <input type="email" id="emailUsuario" class="input-cadastro" placeholder="exemplo@email.com">
             </div>
 
             <button class="botao-cadastro" onclick="realizarCadastro()">Criar Conta & Entrar</button>
-            
-            <button class="botao-anonimo" onclick="entrarComoAnonimo()">Quero continuar sem me identificar (Anônimo)</button>
+            <button class="botao-anonimo" onclick="entrarComoAnonimo()">Quero continuar sem me identificar</button>
         </div>
     </div>
 
     <div id="sitePrincipal" class="conteudo-principal">
 
-        <aside class="barra-lateral">
+        <aside>
             <h2>Guia e recursos</h2>
-            <nav>
-                <ul>
-                    <li onclick="filtrarTema('Ansiedade')">
-                        <span class="indicador"></span> ansiedade
-                    </li>
-                    <li onclick="filtrarTema('Depressão')">
-                        <span class="indicador"></span> Depressão
-                    </li>
-                    <li onclick="filtrarTema('Relacionamento')">
-                        <span class="indicador"></span> relacionamento
-                    </li>
-                    <li onclick="filtrarTema('Autoestima')">
-                        <span class="indicador"></span> Auto estima
-                    </li>
-                </ul>
-            </nav>
+            <ul>
+                <li onclick="filtrarTema('Ansiedade')">ansiedade</li>
+                <li onclick="filtrarTema('Depressão')">Depressão</li>
+                <li onclick="filtrarTema('Relacionamento')">relacionamento</li>
+                <li onclick="filtrarTema('Autoestima')">Auto estima</li>
+            </ul>
         </aside>
 
-        <main class="area-principal">
-            
-            <section class="caixa-interacao">
+        <main>
+            <div class="caixa-interacao">
                 <h2 id="boasVindasTexto">Como posso deixar o seu coração mais leve hoje?</h2>
                 
                 <div class="campo-busca">
-                    <input type="text" id="problemaInput" placeholder="Conte seu problema ou como se sente hoje...">
-                    <button class="botao-solucao" onclick="buscarSolucao()">Encontre uma solução</button>
+                    <input type="text" id="problemaInput" placeholder="Conte seu problema ou como se sente...">
+                    <button class="botao-solucao" onclick="buscarSolucao()">Encontre uma soluçao</button>
                 </div>
 
                 <div id="resposta" class="caixa-resposta"></div>
-            </section>
+            </div>
 
-            <section class="historias">
+            <div class="historias">
                 <h3>Historias que inspiram</h3>
-                <div class="card-historia">
-                    <p class="texto-historia">"Depois de passar por momentos muito difíceis de ansiedade, descobri que respirar fundo e dar um passo de cada vez muda tudo. Você não está sozinho nessa jornada."</p>
-                </div>
-            </section>
-
+                <p class="texto-historia">"Depois de passar por momentos muito difíceis de ansiedade, descobri que respirar fundo e dar um passo de cada vez muda tudo. Você não está sozinho nessa jornada."</p>
+            </div>
         </main>
 
     </div>
 
-    <footer class="rodape">
-        <p>&copy; 2026 - <strong>Espaço Amigo</strong>. Todos os direitos reservados para o seu bem-estar.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

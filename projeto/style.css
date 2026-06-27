@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #e9ecef; /* O fundo acinzentado do seu site original */
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #198754; /* O verde plano do seu cabeçalho */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* --- TELA DE CADASTRO --- */
+.secao-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.card-cadastro {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-cadastro h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.card-cadastro p {
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+.grupo-input {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-cadastro {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    outline: none;
+}
+
+.botao-cadastro {
+    width: 100%;
+    background-color: #198754;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botao-anonimo {
+    background: none;
+    border: none;
+    color: #6c757d;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+/* --- SITE PRINCIPAL (IGUAL À FOTO DO SEU MONITOR) --- */
+.conteudo-principal {
+    display: none; /* Escondido antes do login */
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 100%;
+    padding: 0 20px;
+    display: none; 
+    gap: 30px;
+}
+
+/* Barra lateral esquerda com a borda superior verde */
+aside {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    height: fit-content;
+    border-top: 5px solid #198754; 
+}
+
+aside h2 {
+    color: #198754;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 15px 10px;
+    color: #495057;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Coluna da direita */
+main {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Bloco principal de texto e input */
+.caixa-interacao {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+main h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.campo-busca {
+    display: flex;
+    gap: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Botão Coral da Foto */
+.botao-solucao {
+    background-color: #f27463; 
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Caixa de Resposta */
+.caixa-resposta {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    border-left: 5px solid #207c51;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    line-height: 1.5;
+}
+
+/* Bloco de Histórias Inferior */
+.historias {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.historias h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.texto-historia {
+    color: #6c757d;
+    font-style: italic;
+    line-height: 1.6;
+}
