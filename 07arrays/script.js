@@ -1,5 +1,5 @@
 
-     let idades = [18, 20, 12, 35, 14, 15]
+     let idades = [18, 20, 12, 35, 14, 15 ,38,88,99]
      let precos =[]
 
      const produtos = [
