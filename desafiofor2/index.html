@@ -7,17 +7,14 @@
 </head>
 <body>
 
-    <div class="cartao">
-       
-       <h1>Relatório de Bugs da Sprint</h1>
-       <button id="btnGerarRelatorio">Gerar relatorio</button> 
-       <br>
-       <br>
-       <textarea id="relatorioTexto" rows="40" cols="60" readonly >Relatorio</textarea>
-
+    <div class="cartao" style="width: 500px; min-height: 500px;">
+        <h1>Relatório de Bugs da Sprint</h1>
         
+        <button onclick="gerarRelatorio()">Gerar Relatório</button>
+        
+        <textarea id="relatorio" readonly placeholder="O relatório aparecerá aqui após o preenchimento..."></textarea>
     </div>
 
     <script src="script.js"></script>
-
+</body>
 </html>
