@@ -31,31 +31,37 @@ verProdutosComPrecos();
 
 
 
-function verProdutos() {
-//console.log(produtos)
-for (let i = 0; i < produtos.length; i++) {
-    document.getElementById('listaProdutos').innerHTML += '<p>'+ i + " °: " + produtos[i] + '</p>';
-}
-}
+// function verProdutos() {
+// //console.log(produtos)
+// for (let i = 0; i < produtos.length; i++) {
+//     document.getElementById('listaProdutos').innerHTML += '<p>'+ i + " °: " + produtos[i] + '</p>';
+// }
+// }
 
-function verProdutosComPrecos() {
+// function verProdutosComPrecos() {
     
-    for (let i = 0; i < produtos.length; i++) {
-        document.getElementById('listaProdutos').innerHTML += 
-        '<p>'+ i + " °: " + produtos[i] + " - R$ " + precos[i].toFixed(2).replace('.', ',')+ '</p>';
-    }
+//     for (let i = 0; i < produtos.length; i++) {
+//         document.getElementById('listaProdutos').innerHTML += 
+//         '<p>'+ i + " °: " + produtos[i] + " - R$ " + precos[i].toFixed(2).replace('.', ',')+ '</p>';
+//     }
+// }
+
+// function removerUltimoProduto() {
+// produtos.pop(); 
+// precos.pop();
+// verProdutosComPrecos();
+
+
+
+// }
+
+
+let idades = [22, 34, 44, 55, 66, 77, 99, 11];
+function rodarDemo() {
+    let valor =Number(prompt("valor pra remover"));
+    let pos = idades.indexOf(valor)
+    // let filtrado = idades.filter(idades => idades != valor);
+    // let idades = idades.filter(idade => idade <40);
+    // console.log(filtrado)
 }
-
-function removerUltimoProduto() {
-produtos.pop(); 
-precos.pop();
-verProdutosComPrecos();
-
-
-
-}
-
-
-
-
 
