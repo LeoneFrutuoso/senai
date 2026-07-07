@@ -24,12 +24,12 @@
         ];
 
         const lista = document.getElementById("lista");
-        const seletor = documetn.getElementById("seletor");
+        const seletor = document.getElementById("seletor");
 
         personagens.forEach((nome, i) => {
             const celula = document.createElement("div");
             celula.className = "celula";
-            celula.id = "item" = i;
+            celula.id = "item" + i;
             celula.innerHTML = `<span class="valor">${nome}</span><class="idx">[${i}]</span>`
             lista.appendChild(celula);
 
@@ -40,8 +40,8 @@
         });
 
         function buscarIndice() {
-            document.querySelectorAll(".celula").foreach(c.classLista.remove("destaque"));
-            const nomeEscolhido = selector.value;
+            document.querySelectorAll(".celula").forEach(c => c.classList.remove("destaque"));
+            const nomeEscolhido = seletor.value;
             const indice = personagens.indexOf(nomeEscolhido);
             document.getElementById("resultado").textContent =
 
