@@ -9,10 +9,19 @@
 <body>
     <div class="card">
         <h1>Buscar Indice de Personagem</h1>
+
+         <div>
+            <input type="text" id="novo-nome" placeholder="Nome do personagem">
+            <button onclick="adicionarPersonagem()">Adicionar Personagem</button>
+        </div>
+
+
+
         <div class="array-container" id="lista"></div>
         
         <select id="seletor"></select>
-        <button onclick="buscarIndice()">Buscar Indice</button>
+
+         <button onclick="buscarIndice()">Buscar Indice</button>
         <div id="resultado"></div>
     </div>
     <script>
@@ -26,19 +35,36 @@
         const lista = document.getElementById("lista");
         const seletor = document.getElementById("seletor");
 
-        personagens.forEach((nome, i) => {
-            const celula = document.createElement("div");
-            celula.className = "celula";
-            celula.id = "item" + i;
+
+
+
+
+        function adicionarPersonagem() {
+            const novoNome = document.getElementById("novo-nome").value.trim();
+            if (novoNome && !personagens.includes(novoNome)) {
+                personagens.push(novoNome);
+                atualizarLista();
+                document.getElementById("novo-nome").value = "";
+            } else {
+                alert("Nome inválido ou já existente!");
+            }
+        }
+
+        function atualizarLista() {
+            lista.innerHTML = "";
+            personagens.forEach((nome, i) => {
+                const celula = document.createElement("div");
+                celula.className = "celula";
+                celula.id = "item" + i;
             celula.innerHTML = `<span class="valor">${nome}</span><span class="idx">[${i}]</span>`;
             lista.appendChild(celula);
-
+            
             const opt = document.createElement("option");
             opt.value = nome;
             opt.textContent = nome;
             seletor.appendChild(opt);
         });
-
+    }
         function buscarIndice() {
             document.querySelectorAll(".celula").forEach(c => c.classList.remove("destaque"));
             const nomeEscolhido = seletor.value;
