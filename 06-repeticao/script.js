@@ -42,3 +42,13 @@
 // alert(total)
 
 
+
+let pedidosPromocionais = 0;
+
+for (let pedido = 1; pedido <= 10; pedido++) {
+    if (pedido % 2 === 0 && pedido > 4) {
+        pedidosPromocionais++;
+    }
+}
+
+console.log(pedidosPromocionais);
